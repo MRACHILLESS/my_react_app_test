@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+*{
+  scroll-behavior: smooth;
+}
+header{
+    height: 130px;
+    width: 100%;
+    background-color: rgb(45, 45, 79);
+    box-shadow: 0px 15px 22px -11px black;
+    z-index: 100;
+    position: fixed;
+    color: white;
+    cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header span{
+    
+    text-transform: uppercase;
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    
 }
+
+/* CSS for screens smaller than 576px */
+@media(max-width:576px) {
+  header{
+    height: 80px;
+  }
+  .header span{
+    font-size: 30px;
+  }
+}
+
+/* CSS for screens between 576px and 900px */
+@media (min-width: 576px) and (max-width: 900px) {
+  header{
+    height: 100px;
+  }
+    .header span{
+        font-size: 40px;
+      }
+  }
+
+  @media (min-width: 900px) and (max-width: 1200px) {
+    .header span{
+        font-size: 55px;
+      }
+  }

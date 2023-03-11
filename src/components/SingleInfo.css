@@ -1,0 +1,74 @@
+.myCard{
+    display: flex;
+    width: 230px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-left: 10px;
+    flex-direction: column;
+    border-radius: 15px;
+    position: relative;
+    color: white;
+    background-color: #1e2431;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.myCard img{
+    margin-bottom: 15px;
+}
+
+.myCard Title{
+    font-size: 22px;
+}
+
+.myCard .titleInner{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.myCard:hover{
+    background-color: white;
+    color: black;
+}
+
+/* CSS for screens smaller than 576px */
+@media(max-width:576px) {
+    .myCard{
+      width: 40%;
+      height: 40%;
+    }
+    .myCard img{
+        margin-bottom: 8px;
+    }
+   .title{
+    font-size:18px;
+    padding: 5px 0;
+   }
+   .titleInner{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+   }
+  }
+  
+  /* CSS for screens between 576px and 900px */
+  @media (min-width: 576px) and (max-width: 900px) {
+    .myCard{
+        width: 45%;
+      }
+      .myCard img{
+          margin-bottom: 12px;
+      }
+     .title{
+      font-size:20px;
+     }
+     .titleInner{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 5px;
+     }
+    }
+  

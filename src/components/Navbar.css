@@ -1,0 +1,25 @@
+.navbar {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 100px;
+    position: fixed;
+    top: 87vh;
+    background-color: rgb(45, 45, 79);
+}
+
+nav ul {
+    display: flex; /* Set display property to flex */
+    align-items: center;
+    list-style: none; /* Remove default list styles */
+    padding-top:10px
+  }
+  
+  nav li {
+    margin-right: 100px; /* Add spacing between items */
+  }
+  
+  nav a {
+    text-decoration: none; /* Remove default link underline */
+    color: white; /* Change link color */
+  }
